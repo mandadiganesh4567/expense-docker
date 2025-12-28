@@ -3,6 +3,6 @@ ENV DB_HOST = "mysql"
 RUN mkdir /opt/server
 WORKDIR /opt/server
 COPY *.js .
-copy package.jason .
+COPY package.jason .
 RUN npm install
 CMD ["node", "index.js"]
